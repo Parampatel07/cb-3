@@ -1,43 +1,44 @@
-// write a programe to make calculator
-//  1- addtion
-//  2- subtraction
-//  3- multipication
-//  4- division
-// this was pushed
+// write a program to make claclulator
+// 1-addtion
+// 2-subtraction
+// 3-multiplication
+// 4-division
 #include <stdio.h>
 void main()
 {
-    int option;
-    float result, num1, num2;
-    printf("Enter value of num1");
-    scanf("%f", &num1);
-    printf("Enter value of num2");
-    scanf("%f", &num2);
-    printf("Enter 1 for addtion \n Enter 2 for subtraction \n Enter 3 for multiplication \n Enter 4 for division");
-    scanf("%d", &option);
-    if (option == 1) // < > <= >= == !=
+    int num1, num2, select,result;
+
+    printf("Enter value for num1");
+    scanf("%d", &num1);
+    printf("Enter value for num2");
+    scanf("%d", &num2);
+    printf("Enter 1 for addtion \nenter 2 for subtraction\nenter 3 for multiplication \nEnter 4 for division");
+    scanf("%d", &select);
+
+    // < > <= >= == !=
+    if (select == 1)
     {
-        result = num1 + num2;
-        printf("result = %f", result);
+        result=num1+num2;
+        printf("Answer is %d",result);
     }
-    else if (option == 2)
+    else if(select == 2)
     {
-        result = num1 - num2;
-        printf("result = %f", result);
+        result=num1-num2;
+        printf("Answer is %d",result);
     }
-    else if (option == 3)
+    else if(select == 3)
     {
-        result = num1 * num2;
-        printf("result = %f", result);
+        result=num1*num2;
+        printf("Answer is %d",result);
     }
-    else if (option == 4)
+    else if(select == 4)
     {
-        result = num1 / num2;
-        printf("result = %f", result);
+        result= num1/num2;
+        printf("Answer is %d",result);
     }
     else
     {
-        printf("invalid input\n");
+        printf("Invalid selcetion");
     }
-    printf("\ngoodbye..");
+    printf("goodbye");
 }
