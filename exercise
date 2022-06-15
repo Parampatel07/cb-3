@@ -16,7 +16,10 @@ loop
 2} write a program to print following pattern 
 1 8 27 64 .... 10000
 
-3}write a program to print following series (Lucas series)
-2, 1, 3, 4, 7, 11, 18, 29, 47, 76, 123 .... 300
+write a program to print following series (triangular numbers)
+0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55 ... 1000
+
+write a program to print following series (pentagonal  number)
+1, 5, 12, 22, 35, 51, 70, 92, 117, 145, 176 ... 300
 
 triangels -> https://i1.faceprep.in/fp/articles/img/46684_1580817324.png
