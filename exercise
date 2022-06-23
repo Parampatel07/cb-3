@@ -23,3 +23,8 @@ write a program to print following series (pentagonal  number)
 1, 5, 12, 22, 35, 51, 70, 92, 117, 145, 176 ... 300
 
 triangels -> https://i1.faceprep.in/fp/articles/img/46684_1580817324.png
+
+multiarray
+--------------------------------------------
+
+write a programe to take 5 cricketer run for 5 match and find highest run scorer and highest average 

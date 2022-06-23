@@ -1,7 +1,7 @@
 #include <stdio.h>
 void main()
 {
-    int students[5][5], count, std = 0, total_marks[5];
+    int students[5][5], count, std = 0, total_marks[5], average = 0,average2=0,counter;
     do
     {
         printf("Enter marks for student %d \n", std + 1);
@@ -22,16 +22,22 @@ void main()
         }
         std++;
     }
-    total_marks[0] = 0;
-    for (count = 0; count < 5; count++)
+    for (std = 0; std < 5; std++)
     {
-        total_marks[0] = total_marks[0] + students[0][count];
+        total_marks[std] = 0;
+        for (count = 0; count < 5; count++)
+        {
+            total_marks[std] = total_marks[std] + students[std][count];
+        }
+        printf("\n\nTotal marks for student %d are %d", std + 1, total_marks[std]);
     }
-    printf("\n\nTotal marks for student 1 are %d", total_marks[0]);
-    total_marks[1] = 0;
-    for (count=0;count<5;count++)
+    counter = 0;
+    while(counter<5)
     {
-        total_marks[1] = total_marks[1] + students[1][count];
+        average = average + total_marks[counter];
+        counter++;
     }
-    printf("\n\nTotal marks for student 2 are %d", total_marks[1]);
+    printf("\ntotal of total's is %d",average);
+    average2=average/5;
+    printf("\nAverage of all students is %d",average2);
 }
